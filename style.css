@@ -1139,3 +1139,5 @@ nav.menu > *:not(:last-child)::after {
   .logo img { max-height: 36px; }
   .phone-row .phone-btn { padding: 6px 10px; font-size: 14px; }
 }
+
+nav.menu > * { max-width: 140px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
