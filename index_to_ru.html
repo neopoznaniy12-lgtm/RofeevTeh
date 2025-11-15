@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rofeev-tech</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="row-top">
+
+            <div class="logo">
+                <img src="logo-light.png" alt="logo">
+            </div>
+
+            <div class="right-block">
+
+                <div class="lang-wrapper">
+                    <div class="item lang-btn">
+                        <span class="icon">🌐</span>
+                        <div class="text">
+                            <span>Язык</span>
+                            <strong>Русский</strong>
+                        </div>
+                    </div>
+
+                    <div class="lang-dropdown">
+                        <a href="index_to_ru.html">Русский</a>
+                        <a href="index_to_en.html">English</a>
+                        <a href="index_to_uz.html">O‘zbekcha</a>
+                    </div>
+                </div>
+
+                <div class="lang-wrapper">
+                    <span class="icon">👤</span>
+                    <div class="text">
+                        <span>Аккаунт</span>
+                        <strong><a href="index_acc_ru.html">Вход</a></strong>
+                    </div>
+                </div>
+
+                <div class="lang-wrapper">
+                    <span class="icon">🛒</span>
+                    <div class="text">
+                        <span>0 продуктов</span>
+                        <strong>Корзина</strong>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row-bottom">
+
+            <nav class="menu">
+                <a href="index_ru.html">&#x1F3E0</a>
+
+                <div class="menu-item has-megamenu">
+                    <a href="index_to_ru.html">Каталог продукции</a>
+
+                    <div class="megamenu">
+                        <div class="menu-col">
+                            <h4>Торговое оборудование</h4>
+                            <a href="index_to_ru.html?category=POS-моноблоки">POS-моноблоки</a>
+                            <a href="index_to_ru.html?category=Сканеры штрих-кодов">Сканеры штрих-кодов</a>
+                            <a href="index_to_ru.html?category=Принтеры чеков">Принтеры чеков</a>
+                            <a href="index_to_ru.html?category=Торговые весы">Торговые весы</a>
+                            <a href="index_to_ru.html?category=Денежные ящики">Денежные ящики</a>
+                            <a href="index_to_ru.html?category=Принтеры этикеток">Принтеры этикеток</a>
+                        </div>
+
+                        <div class="menu-col">
+                            <h4>Программное обеспечение</h4>
+                            <a href="index_to_ru.html?category=EASYTRADE">EASYTRADE</a>
+                            <a href="index_to_ru.html?category=REGOS">REGOS</a>
+                        </div>
+
+                        <div class="menu-col">
+                            <h4>Расходные материалы</h4>
+                            <a href="index_to_ru.html?category=Термобумага">Термобумага</a>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="index_au_ru.html">О нас</a>
+
+                <div class="menu-item has-submenu">
+                    <a href="#">Новости и события</a>
+
+                    <div class="submenu">
+                        <a href="#">Лента новостей</a>
+                        <a href="#">Блог</a>
+                    </div>
+                </div>
+
+                <a href="index_cn_ru.html">Контакты</a>
+
+                <div class="menu-item has-submenu">
+                    <a href="#">База знаний</a>
+
+                    <div class="submenu">
+                        <a href="#">База знаний</a>
+                        <a href="#">Часто задаваемые вопросы</a>
+                    </div>
+                </div>
+            </nav>
+
+            <a href="tel:+998992941208" class="phone-btn">
+                <span class="icon">📞</span>
+                +998 99 294 12 08
+            </a>
+        </div>
+
+    </header>
+
+    <section class="catalog">
+        <aside class="filter-panel">
+            <h2>Все категории</h2>
+            <label><input type="checkbox"> POS-моноблоки</label>
+            <label><input type="checkbox"> Принтеры чеков</label>
+            <label><input type="checkbox"> Сканеры штрих-кодов</label>
+            <label><input type="checkbox"> Принтеры этикеток</label>
+            <label><input type="checkbox"> Торговые весы</label>
+            <label><input type="checkbox"> Денежные ящики</label>
+            <label><input type="checkbox"> Термобумага</label>
+            <label><input type="checkbox"> REGOS</label>
+            <label><input type="checkbox"> EASYTRADE</label>
+
+            <div class="price-filter">
+                <h3>Цена</h3>
+                <div class="range">
+                    <span>0 UZS - 20 000 000 UZS</span>
+                    <input type="range" min="0" max="20000000" value="5000000">
+                </div>
+                <button>Применить</button>
+            </div>
+        </aside>
+
+        <div class="product-list">
+            <div class="product" data-category="POS-моноблоки" data-price="6400000">
+                <img src="дв_мон_сер.png" alt="">
+                <p class="category">POS-моноблоки</p>
+                <h4>Сенсорный POS-моноблок 919S с двумя дисплеями</h4>
+                <p class="price">6 400 000 UZS</p>
+            </div>
+
+            <div class="product" data-category="POS-моноблоки" data-price="11950000">
+                <img src="photo_2025-01-22_17-50-48_ED2Pi9z.png" alt="">
+                <p class="category">POS-моноблоки</p>
+                <h4>POS-моноблок 918D i5 6gen 8/128 27-дюймовый</h4>
+                <p class="price">11 950 000 UZS</p>
+            </div>
+
+            <div class="product" data-category="POS-моноблоки" data-price="5590000">
+                <img src="Текст_абзаца_24.png" alt="">
+                <p class="category">POS-моноблоки</p>
+                <h4>POS-моноблок G150 i5 8/128</h4>
+                <p class="price">5 590 000 UZS</p>
+            </div>
+
+            <div class="product" data-category="Торговые весы" data-price="6966000">
+                <img src="весы_1.png" alt="">
+                <p class="category">Торговые весы</p>
+                <h4>Торговые весы ШТРИХ-ПРИНТ М 4.5</h4>
+                <p class="price">6 966 000 UZS</p>
+            </div>
+
+            <div class="product" data-category="POS-моноблоки" data-price="4820000">
+                <img src="ПОС.png" alt="">
+                <p class="category">POS-моноблоки</p>
+                <h4>POS-моноблок 915D i3 4/64 17 дюймовый</h4>
+                <p class="price">4 820 000 UZS</p>
+            </div>
+
+            <div class="product" data-category="EASYTRADE" data-price="2400000">
+                <img src="et.png" alt="">
+                <p class="category">EASYTRADE</p>
+                <h4>EasyTrade (локальная, 1 склад, 1 касса)</h4>
+                <p class="price">2 400 000 UZS</p>
+            </div>
+
+            <div class="product" data-category="Принтеры чеков" data-price="860000">
+                <img src="чек_4.png" alt="">
+                <p class="category">Принтеры чеков</p>
+                <h4>Принтер чеков Xprinter XP-D260N</h4>
+                <p class="price">860 000 UZS</p>
+            </div>
+
+            <div class="product" data-category="Сканеры штрих-кодов" data-price="625000">
+                <img src="Сканер.png" alt="">
+                <p class="category">Сканеры штрих-кодов</p>
+                <h4>Проводной сканер штрих-кода Netum W5 USB 2D</h4>
+                <p class="price">625 000 UZS</p>
+            </div>
+
+            <div class="product" data-category="EASYTRADE" data-price="3500000">
+                <img src="et_2.png" alt="">
+                <p class="category">EASYTRADE</p>
+                <h4>EasyTrade (сетевая версия)</h4>
+                <p class="price">3 500 000 UZS</p>
+            </div>
+
+            <div class="product" data-category="REGOS" data-price="1000000">
+                <img src="sm.png" alt="">
+                <p class="category">REGOS</p>
+                <h4>REGOS: Store Management</h4>
+                <p class="price">1 000 000 UZS</p>
+            </div>
+
+            <div class="product" data-category="Сканеры штрих-кодов" data-price="790000">
+                <img src="руч_скан_1_HH0CoTq.png" alt="">
+                <p class="category">Сканеры штрих-кодов</p>
+                <h4>Беспроводный сканер штрих-кода Netum K8 2D</h4>
+                <p class="price">790 000 UZS</p>
+            </div>
+
+            <div class="product" data-category="Сканеры штрих-кодов" data-price="1590000">
+                <img src="photo_2024-11-29_14-22-47_6.png" alt="">
+                <p class="category">Сканеры штрих-кодов</p>
+                <h4>Беспроводной Сканер штрих-кодов 1D-2D</h4>
+                <p class="price">1 590 000 UZS</p>
+            </div>
+
+            <div class="product" data-category="Денежные ящики" data-price="1032000">
+                <img src="ден_ящ.png" alt="">
+                <p class="category">Денежный ящик</p>
+                <h4>Денежный ящик 430</h4>
+                <p class="price">1 032 000 UZS</p>
+            </div>
+
+            <div class="product" data-category="Принтеры этикеток" data-price="650000">
+                <img src="бар_14.png" alt="">
+                <p class="category">Принтер этикеток</p>
+                <h4>Термопринтер этикеток XP-365B</h4>
+                <p class="price">650 000 UZS</p>
+            </div>
+
+            <div class="product" data-category="Сканеры штрих-кодов" data-price="1010000">
+                <img src="без_головы.png" alt="">
+                <p class="category">Сканер штрих-кодов</p>
+                <h4>Настольный Сканер штрих-кодов NETUM A6 1D-2D</h4>
+                <p class="price">1 010 000 UZS</p>
+            </div>
+
+            <div class="product" data-category="POS-моноблоки" data-price="7500000">
+                <img src="photo_2025-01-22_17-50-48.png" alt="">
+                <p class="category">POS-моноблоки</p>
+                <h4>Pos-Моноблок 915D i3 4/64 24 дюймовый</h4>
+                <p class="price">7 500 000 UZS</p>
+            </div>
+
+            <div class="product" data-category="Сканеры штрих-кодов" data-price="1280000">
+                <img src="photo_2024-03-27_14-28-22.png" alt="">
+                <p class="category">Сканер штрих-кодов</p>
+                <h4>Настольный Сканер штрих-кодов NETUM D8600 1D-2D</h4>
+                <p class="price">1 280 000 UZS</p>
+            </div>
+
+            <div class="product" data-category="Термобумага" data-price="59000">
+                <img src="chekovaia_lenta.png" alt="">
+                <p class="category">Термобумага</p>
+                <h4>Бумага для чекового принтера</h4>
+                <p class="price">59 000 UZS</p>
+            </div>
+
+            <div class="product" data-category="Термобумага" data-price="35000">
+                <img src="5830.png" alt="">
+                <p class="category">Термобумага</p>
+                <h4>Самоклеящаяся термобумага 58х40мм (до 500 шт/рул)</h4>
+                <p class="price">35 000 UZS</p>
+            </div>
+
+            <div class="product" data-category="Принтеры этикеток" data-price="2000000">
+                <img src="бар_7.png" alt="">
+                <p class="category">Принтер этикеток</p>
+                <h4>Термопринтер этикеток XP-423B</h4>
+                <p class="price">2 000 000 UZS</p>
+            </div>
+
+            <div class="product" data-category="POS-моноблоки" data-price="4780000">
+                <img src="pos1.png" alt="">
+                <p class="category">POS-моноблоки</p>
+                <h4>Pos-терминал T11S i3 4/128</h4>
+                <p class="price">4 780 000 UZS</p>
+            </div>
+
+            <div class="pagination">
+                <span>Показано 1–21 из 72</span>
+                <div class="pages">
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">Вперед</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+
+        <div class="footer-col logo-col">
+            <img src="logo-light.png" alt="">
+        </div>
+
+        <div class="footer-col">
+            <h4>Меню</h4>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Каталог продукции</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Новости и события</a></li>
+                <li><a href="#">База знаний</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Дополнительно</h4>
+            <ul>
+                <li><a href="#">Политика конфиденциальности</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Наши контакты</h4>
+            <ul>
+                <li>ул. Чупон ота 4а, г.Ташкент</li>
+                <li>ул. Гагарина 123/22, г.Самарканд</li>
+                <li>+998 55 701 00 08</li>
+                <li>+998 93 353 20 80</li>
+                <li>info@rofeev.uz</li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const categoryFromUrl = urlParams.get('category');
+
+            const checkboxes = document.querySelectorAll('.filter-panel input[type="checkbox"]');
+            const rangeInput = document.querySelector('.price-filter input[type="range"]');
+            const applyButton = document.querySelector('.price-filter button');
+            const products = document.querySelectorAll('.product');
+
+            function filterProducts() {
+                const activeCategories = Array.from(checkboxes)
+                    .filter(ch => ch.checked)
+                    .map(ch => ch.parentElement.textContent.trim());
+
+                const maxPrice = parseInt(rangeInput.value);
+
+                products.forEach(product => {
+                    const category = product.getAttribute('data-category');
+                    const price = parseInt(product.getAttribute('data-price'));
+
+                    const matchesCategory =
+                        activeCategories.length === 0 ||
+                        activeCategories.some(cat => cat.toLowerCase() === category.toLowerCase());
+
+                    const matchesPrice = price <= maxPrice;
+
+                    product.style.display = (matchesCategory && matchesPrice) ? 'block' : 'none';
+                });
+            }
+
+            // Если из URL пришла категория — включаем нужный чекбокс
+            if (categoryFromUrl) {
+                checkboxes.forEach(ch => {
+                    if (ch.parentElement.textContent.trim().toLowerCase() === categoryFromUrl.toLowerCase()) {
+                        ch.checked = true;
+                    }
+                });
+
+                filterProducts();
+            }
+
+            // Дальше обычные обработчики
+            checkboxes.forEach(ch => ch.addEventListener('change', filterProducts));
+
+            rangeInput.addEventListener('input', () => {
+                document.querySelector('.range span').textContent =
+                    `0 UZS - ${parseInt(rangeInput.value).toLocaleString()} UZS`;
+            });
+
+            applyButton.addEventListener('click', filterProducts);
+        });
+    </script>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const checkboxes = document.querySelectorAll('.filter-panel input[type="checkbox"]');
+            const rangeInput = document.querySelector('.price-filter input[type="range"]');
+            const applyButton = document.querySelector('.price-filter button');
+            const products = document.querySelectorAll('.product');
+
+            function filterProducts() {
+                const activeCategories = Array.from(checkboxes)
+                    .filter(ch => ch.checked)
+                    .map(ch => ch.parentElement.textContent.trim());
+
+                const maxPrice = parseInt(rangeInput.value);
+
+                products.forEach(product => {
+                    const category = product.getAttribute('data-category');
+                    const price = parseInt(product.getAttribute('data-price'));
+
+                    const matchesCategory =
+                        activeCategories.length === 0 ||
+                        activeCategories.some(cat => cat.toLowerCase() === category.toLowerCase());
+                    const matchesPrice = price <= maxPrice;
+
+                    product.style.display = (matchesCategory && matchesPrice) ? 'block' : 'none';
+                });
+            }
+
+            // Обновление фильтра при изменении чекбоксов
+            checkboxes.forEach(ch => ch.addEventListener('change', filterProducts));
+
+            // При изменении ползунка показываем текущую цену
+            rangeInput.addEventListener('input', () => {
+                document.querySelector('.range span').textContent =
+                    `0 UZS - ${parseInt(rangeInput.value).toLocaleString()} UZS`;
+            });
+
+            // Обновление фильтра при нажатии "Применить"
+            applyButton.addEventListener('click', filterProducts);
+        });
+    </script>
+
+</body>
+
+</html>

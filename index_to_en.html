@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rofeev-tech</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="row-top">
+
+            <div class="logo">
+                <img src="logo-light.png" alt="logo">
+            </div>
+
+            <div class="right-block">
+
+                <div class="lang-wrapper">
+                    <div class="item lang-btn">
+                        <span class="icon">🌐</span>
+                        <div class="text">
+                            <span>Language</span>
+                            <strong>English</strong>
+                        </div>
+                    </div>
+
+                    <div class="lang-dropdown">
+                        <a href="index_to_ru.html">Русский</a>
+                        <a href="index_to_en.html">English</a>
+                        <a href="index_to_uz.html">O‘zbekcha</a>
+                    </div>
+                </div>
+
+                <div class="lang-wrapper">
+                    <span class="icon">👤</span>
+                    <div class="text">
+                        <span>Account</span>
+                        <strong><a href="index_acc_en.html">Sign in</a></strong>
+                    </div>
+                </div>
+
+                <div class="lang-wrapper">
+                    <span class="icon">🛒</span>
+                    <div class="text">
+                        <span>0 items</span>
+                        <strong>Cart</strong>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row-bottom">
+
+            <nav class="menu">
+                <a href="index_en.html">&#x1F3E0</a>
+
+                <div class="menu-item has-megamenu">
+                    <a href="index_to_en.html">Product catalog</a>
+
+                    <div class="megamenu">
+                        <div class="menu-col">
+                            <h4>Retail equipment</h4>
+                            <a href="index_to_en.html?category=POS Monoblocks">POS Monoblocks</a>
+                            <a href="index_to_en.html?category=Barcode scanners">Barcode scanners</a>
+                            <a href="index_to_en.html?category=Receipt printers">Receipt printers</a>
+                            <a href="index_to_en.html?category=Retail scales">Retail scales</a>
+                            <a href="index_to_en.html?category=Cash drawers">Cash drawers</a>
+                            <a href="index_to_en.html?category=Label printers">Label printers</a>
+                        </div>
+
+                        <div class="menu-col">
+                            <h4>Software</h4>
+                            <a href="index_to_en.html?category=EASYTRADE">EASYTRADE</a>
+                            <a href="index_to_en.html?category=REGOS">REGOS</a>
+                        </div>
+
+                        <div class="menu-col">
+                            <h4>Consumables</h4>
+                            <a href="index_to_en.html?category=Thermal paper">Thermal paper</a>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="index_au_en.html">About us</a>
+
+                <div class="menu-item has-submenu">
+                    <a href="#">News and Events</a>
+
+                    <div class="submenu">
+                        <a href="#">News feed</a>
+                        <a href="#">Blog</a>
+                    </div>
+                </div>
+
+                <a href="index_cn_en.html">Contacts</a>
+
+                <div class="menu-item has-submenu">
+                    <a href="#">Knowledge base</a>
+
+                    <div class="submenu">
+                        <a href="#">Knowledge base</a>
+                        <a href="#">FAQ</a>
+                    </div>
+                </div>
+            </nav>
+
+            <a href="tel:+998992941208" class="phone-btn">
+                <span class="icon">📞</span>
+                +998 99 294 12 08
+            </a>
+        </div>
+
+    </header>
+
+    <section class="catalog">
+
+        <aside class="filter-panel">
+            <h2>All categories</h2>
+
+            <label><input type="checkbox"> POS Monoblocks</label>
+            <label><input type="checkbox"> Receipt printers</label>
+            <label><input type="checkbox"> Barcode scanners</label>
+            <label><input type="checkbox"> Label printers</label>
+            <label><input type="checkbox"> Retail scales</label>
+            <label><input type="checkbox"> Cash drawers</label>
+            <label><input type="checkbox"> Thermal paper</label>
+            <label><input type="checkbox"> REGOS</label>
+            <label><input type="checkbox"> EASYTRADE</label>
+
+            <div class="price-filter">
+                <h3>Price</h3>
+                <div class="range">
+                    <span>0 UZS - 20 000 000 UZS</span>
+                    <input type="range" min="0" max="20000000" value="5000000">
+                </div>
+                <button>Apply</button>
+            </div>
+        </aside>
+
+        <div class="product-list">
+
+            <div class="product" data-category="POS Monoblocks" data-price="6400000">
+                <img src="дв_мон_сер.png" alt="">
+                <p class="category">POS Monoblocks</p>
+                <h4>Touch POS monoblock 919S, dual display</h4>
+                <p class="price">6 400 000 UZS</p>
+            </div>
+
+            <div class="product" data-category="POS Monoblocks" data-price="11950000">
+                <img src="photo_2025-01-22_17-50-48_ED2Pi9z.png" alt="">
+                <p class="category">POS Monoblocks</p>
+                <h4>POS monoblock 918D i5 6gen 8/128, 27 inch</h4>
+                <p class="price">11 950 000 UZS</p>
+            </div>
+
+            <div class="product" data-category="POS Monoblocks" data-price="5590000">
+                <img src="Текст_абзаца_24.png" alt="">
+                <p class="category">POS Monoblocks</p>
+                <h4>POS monoblock G150 i5 8/128</h4>
+                <p class="price">5 590 000 UZS</p>
+            </div>
+
+            <div class="product" data-category="Retail scales" data-price="6966000">
+                <img src="весы_1.png" alt="">
+                <p class="category">Retail scales</p>
+                <h4>ShTRIX-PRINT M 4.5 retail scale</h4>
+                <p class="price">6 966 000 UZS</p>
+            </div>
+
+            <div class="product" data-category="POS Monoblocks" data-price="4820000">
+                <img src="ПОС.png" alt="">
+                <p class="category">POS Monoblocks</p>
+                <h4>POS monoblock 915D i3 4/64, 17 inch</h4>
+                <p class="price">4 820 000 UZS</p>
+            </div>
+
+            <div class="product" data-category="EASYTRADE" data-price="2400000">
+                <img src="et.png" alt="">
+                <p class="category">EASYTRADE</p>
+                <h4>EasyTrade (local, 1 warehouse, 1 POS)</h4>
+                <p class="price">2 400 000 UZS</p>
+            </div>
+
+            <div class="product" data-category="Receipt printers" data-price="860000">
+                <img src="чек_4.png" alt="">
+                <p class="category">Receipt printers</p>
+                <h4>Xprinter XP-D260N receipt printer</h4>
+                <p class="price">860 000 UZS</p>
+            </div>
+
+            <div class="product" data-category="Barcode scanners" data-price="625000">
+                <img src="Сканер.png" alt="">
+                <p class="category">Barcode scanners</p>
+                <h4>Netum W5 USB 2D wired scanner</h4>
+                <p class="price">625 000 UZS</p>
+            </div>
+
+            <div class="product" data-category="EASYTRADE" data-price="3500000">
+                <img src="et_2.png" alt="">
+                <p class="category">EASYTRADE</p>
+                <h4>EasyTrade (network version)</h4>
+                <p class="price">3 500 000 UZS</p>
+            </div>
+
+            <div class="product" data-category="REGOS" data-price="1000000">
+                <img src="sm.png" alt="">
+                <p class="category">REGOS</p>
+                <h4>REGOS: Store Management</h4>
+                <p class="price">1 000 000 UZS</p>
+            </div>
+
+            <div class="product" data-category="Barcode scanners" data-price="790000">
+                <img src="руч_скан_1_HH0CoTq.png" alt="">
+                <p class="category">Barcode scanners</p>
+                <h4>Netum K8 2D wireless scanner</h4>
+                <p class="price">790 000 UZS</p>
+            </div>
+
+            <div class="product" data-category="Barcode scanners" data-price="1590000">
+                <img src="photo_2024-11-29_14-22-47_6.png" alt="">
+                <p class="category">Barcode scanners</p>
+                <h4>1D–2D wireless scanner</h4>
+                <p class="price">1 590 000 UZS</p>
+            </div>
+
+            <div class="product" data-category="Cash drawers" data-price="1032000">
+                <img src="ден_ящ.png" alt="">
+                <p class="category">Cash drawers</p>
+                <h4>Cash drawer 430</h4>
+                <p class="price">1 032 000 UZS</p>
+            </div>
+
+            <div class="product" data-category="Label printers" data-price="650000">
+                <img src="бар_14.png" alt="">
+                <p class="category">Label printers</p>
+                <h4>XP-365B thermal printer</h4>
+                <p class="price">650 000 UZS</p>
+            </div>
+
+            <div class="product" data-cagestegory="Barcode scanners" data-price="1010000">
+                <img src="без_головы.png" alt="">
+                <p class="category">Barcode scanners</p>
+                <h4>NETUM A6 1D-2D desktop scanner</h4>
+                <p class="price">1 010 000 UZS</p>
+            </div>
+
+            <div class="product" data-category="POS Monoblocks" data-price="7500000">
+                <img src="photo_2025-01-22_17-50-48.png" alt="">
+                <p class="category">POS Monoblocks</p>
+                <h4>POS monoblock 915D i3 4/64, 24 inch</h4>
+                <p class="price">7 500 000 UZS</p>
+            </div>
+
+            <div class="product" data-category="Barcode scanners" data-price="1280000">
+                <img src="photo_2024-03-27_14-28-22.png" alt="">
+                <p class="category">Barcode scanners</p>
+                <h4>NETUM D8600 1D-2D desktop scanner</h4>
+                <p class="price">1 280 000 UZS</p>
+            </div>
+
+            <div class="product" data-category="Thermal paper" data-price="59000">
+                <img src="chekovaia_lenta.png" alt="">
+                <p class="category">Thermal paper</p>
+                <h4>Receipt paper roll</h4>
+                <p class="price">59 000 UZS</p>
+            </div>
+
+            <div class="product" data-category="Thermal paper" data-price="35000">
+                <img src="5830.png" alt="">
+                <p class="category">Thermal paper</p>
+                <h4>Self-adhesive thermal labels 58x40 mm</h4>
+                <p class="price">35 000 UZS</p>
+            </div>
+
+            <div class="product" data-category="Label printers" data-price="2000000">
+                <img src="бар_7.png" alt="">
+                <p class="category">Label printers</p>
+                <h4>XP-423B thermal printer</h4>
+                <p class="price">2 000 000 UZS</p>
+            </div>
+
+            <div class="product" data-category="POS Monoblocks" data-price="4780000">
+                <img src="pos1.png" alt="">
+                <p class="category">POS Monoblocks</p>
+                <h4>POS terminal T11S i3 4/128</h4>
+                <p class="price">4 780 000 UZS</p>
+            </div>
+
+            <div class="pagination">
+                <span>Showing 1–21 of 72</span>
+
+                <div class="pages">
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">Next</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+
+        <div class="footer-col logo-col">
+            <img src="logo-light.png" alt="">
+        </div>
+
+        <div class="footer-col">
+            <h4>Menu</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Product catalog</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">News and events</a></li>
+                <li><a href="#">Knowledge base</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Additional</h4>
+            <ul>
+                <li><a href="#">Privacy policy</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Contact info</h4>
+            <ul>
+                <li>Chupon ota street 4a, Tashkent</li>
+                <li>Gagarin street 123/22, Samarkand</li>
+                <li>+998 55 701 00 08</li>
+                <li>+998 93 353 20 80</li>
+                <li>info@rofeev.uz</li>
+            </ul>
+        </div>
+
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const categoryFromUrl = urlParams.get('category');
+
+            const checkboxes = document.querySelectorAll('.filter-panel input[type="checkbox"]');
+            const rangeInput = document.querySelector('.price-filter input[type="range"]');
+            const applyButton = document.querySelector('.price-filter button');
+            const products = document.querySelectorAll('.product');
+
+            function filterProducts() {
+                const activeCategories = Array.from(checkboxes)
+                    .filter(ch => ch.checked)
+                    .map(ch => ch.parentElement.textContent.trim());
+
+                const maxPrice = parseInt(rangeInput.value);
+
+                products.forEach(product => {
+                    const category = product.getAttribute('data-category');
+                    const price = parseInt(product.getAttribute('data-price'));
+
+                    const matchesCategory =
+                        activeCategories.length === 0 ||
+                        activeCategories.some(cat => cat.toLowerCase() === category.toLowerCase());
+
+                    const matchesPrice = price <= maxPrice;
+
+                    product.style.display = (matchesCategory && matchesPrice) ? 'block' : 'none';
+                });
+            }
+
+            if (categoryFromUrl) {
+                checkboxes.forEach(ch => {
+                    if (ch.parentElement.textContent.trim().toLowerCase() === categoryFromUrl.toLowerCase()) {
+                        ch.checked = true;
+                    }
+                });
+
+                filterProducts();
+            }
+
+            checkboxes.forEach(ch => ch.addEventListener('change', filterProducts));
+
+            rangeInput.addEventListener('input', () => {
+                document.querySelector('.range span').textContent =
+                    `0 UZS - ${parseInt(rangeInput.value).toLocaleString()} UZS`;
+            });
+
+            applyButton.addEventListener('click', filterProducts);
+        });
+    </script>
+
+</body>
+
+</html>
