@@ -1141,3 +1141,124 @@ nav.menu > *:not(:last-child)::after {
 }
 
 nav.menu > * { max-width: 140px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+/* === Общая мобильная адаптация === */
+@media(max-width: 768px) {
+
+    /* Контейнер каталога – вертикальный, а не двухколоночный */
+    .catalog {
+        display: flex;
+        flex-direction: column;
+        padding: 0 12px;
+        gap: 20px;
+    }
+
+    /* Фильтр становится сверху и растягивается */
+    .filter-panel {
+        position: relative;
+        width: 100%;
+        top: 0;
+        margin-bottom: 10px;
+        padding: 15px;
+        border: 1px solid #e3e3e3;
+        border-radius: 12px;
+        background: #fff;
+    }
+
+    /* Заголовки фильтра */
+    .filter-panel h2,
+    .filter-panel h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .filter-panel label {
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+
+    /* Растягиваем инпут range */
+    .price-filter .range {
+        font-size: 14px;
+    }
+
+    /* Кнопка применить */
+    .price-filter button {
+        width: 100%;
+        padding: 10px 0;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+
+    /* === Товары === */
+    .product-list {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* сетка 2 колонки на телефоне */
+        gap: 12px;
+    }
+
+    .product {
+        padding: 10px;
+        border-radius: 12px;
+        border: 1px solid #e3e3e3;
+        background: #fff;
+        box-sizing: border-box;
+    }
+
+    .product img {
+        width: 100%;
+        height: auto;
+    }
+
+    .product h4 {
+        font-size: 14px;
+        line-height: 1.2;
+        min-height: 34px;
+    }
+
+    .product .category {
+        font-size: 12px;
+        opacity: 0.8;
+    }
+
+    .product .price {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    /* === Пагинация === */
+    .pagination {
+        grid-column: 1 / -1;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .pagination span {
+        display: block;
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+
+    .pagination .pages a {
+        font-size: 14px;
+        padding: 6px 10px;
+        border-radius: 6px;
+    }
+}
+
+/* === Очень маленькие устройства (ширина < 420px) === */
+@media(max-width: 420px) {
+
+    .product-list {
+        grid-template-columns: 1fr; /* один товар в ряд */
+    }
+
+    .product {
+        padding: 12px;
+    }
+
+    .product h4 {
+        font-size: 15px;
+    }
+}
