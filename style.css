@@ -1044,4 +1044,98 @@ nav.menu .submenu::after {
 
   .footer-col {
     margin-bottom: 25px;
+
   }
+
+/* ---------- NAVBAR MOBILE FIRST / RESPONSIVE ---------- */
+
+/* Общие правила для навигации */
+.header { width: 100%; box-sizing: border-box; }
+.row-top, .row-bottom { display: flex; align-items: center; justify-content: space-between; width: 100%; }
+
+/* Логотип влево, правый блок справа на больших экранах */
+.logo img { max-height: 44px; display: block; }
+
+/* Меню как горизонтальная лента с прокруткой при нехватке места */
+nav.menu {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow-x: auto;           /* ключ: все пункты в 1 строку, можно скроллить */
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  padding: 6px 8px;
+  margin: 0;
+  scrollbar-width: thin;
+}
+
+/* Стили пунктов меню */
+nav.menu > * {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  padding: 8px 12px;
+  flex: 0 0 auto;            /* не сжимаем текст: остаётся в строке */
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Скрываем выпадающие блоки по умолчанию на мобильных — откроем по клику (см. JS) */
+nav.menu .megamenu,
+nav.menu .submenu { display: none !important; }
+
+/* Телефонный блок — отдельная строка под меню */
+.phone-row {
+  display: block;
+  width: 100%;
+  text-align: right;
+  padding: 8px 12px;
+  box-sizing: border-box;
+}
+
+/* Стили номера и иконки */
+.phone-row .phone-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(0,0,0,0.05);
+  padding: 8px 12px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #fff; /* если нужен белый текст, изменяй */
+  background-color: #1c1c1c; /* основной фон номера — подогнать под тему */
+  font-weight: 600;
+}
+
+/* Убедимся, что иконки не перекрываются */
+.right-block { display: flex; align-items: center; gap: 10px; }
+
+/* ---------- BREAKPOINTS: планшет/десктоп ---------- */
+@media(min-width: 769px) {
+  /* на больших экранах вернём обычное поведение */
+  nav.menu { overflow: visible; white-space: normal; gap: 20px; padding: 0; }
+  nav.menu .megamenu { display: block; } /* если хочешь hover-поведение — настраивай отдельно */
+  .phone-row { text-align: right; padding: 0; }
+  .phone-row .phone-btn { background-color: transparent; color: inherit; padding: 0; border-radius: 0; }
+}
+
+/* ---------- Визуальные мелочи --------- */
+/* тонкая полоса-разделитель (если используешь) — позиционировать абсолютно, не сдвигая текст */
+nav.menu > *:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: -6px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 18px;
+  background: rgba(0,0,0,0.08);
+  pointer-events: none;
+}
+
+/* на мобильных уменьшаем шрифты, чтобы влазило больше пунктов */
+@media(max-width:420px) {
+  nav.menu > * { padding: 6px 10px; font-size: 14px; }
+  .logo img { max-height: 36px; }
+  .phone-row .phone-btn { padding: 6px 10px; font-size: 14px; }
+}
