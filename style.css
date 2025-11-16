@@ -1381,4 +1381,48 @@ nav.menu > * { max-width: 140px; overflow: hidden; text-overflow: ellipsis; whit
 }
 
 
+  /* Общая обёртка с фиксированным соотношением сторон */
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 14px;
+    overflow: hidden;
+    background: #000;
+}
+
+/* Сам iframe всегда вписывается в прямоугольник */
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Соотношение сторон всегда 16:9 */
+.video-wrapper::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%; /* 9/16 * 100 */
+}
+
+/* --- Мобильная настройка --- */
+@media(max-width: 768px) {
+    .video-wrapper {
+        max-width: 100%;     /* чтобы не растягивало за экран */
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 420px) {
+    .video-wrapper {
+        border-radius: 10px;
+        max-width: 100%;
+    }
+}
+
+
+
 
