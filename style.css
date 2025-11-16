@@ -1423,6 +1423,51 @@ nav.menu > * { max-width: 140px; overflow: hidden; text-overflow: ellipsis; whit
     }
 }
 
+/* Увеличиваем отступ между логотипом и языком/аккаунт/корзина */
+@media (max-width: 768px) {
+    .header .row-bottom,
+    .menu,
+    nav.menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header img {
+        margin-bottom: 7px;
+    }
+}
+
+/* Делаем меню в одну линию на телефоне */
+@media (max-width: 768px) {
+    nav.menu a {
+        font-size: 13px;
+        margin-right: 12px;
+        white-space: nowrap;
+    }
+
+    nav.menu {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+
+    nav.menu::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+/* Правим расстояние между пунктами меню */
+@media (max-width: 768px) {
+    .menu-item,
+    .menu-item a {
+        font-size: 14px !important;
+        margin-right: 18px;
+    }
+}
+
 
 
 
