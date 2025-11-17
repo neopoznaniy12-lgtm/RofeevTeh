@@ -71,3 +71,15 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 
+<script>
+const mainBurger = document.getElementById("mainBurger");
+const mainMenu = document.getElementById("mainMobileMenu");
+
+mainBurger.addEventListener("click", () => {
+    mainMenu.style.display =
+        mainMenu.style.display === "block" ? "none" : "block";
+});
+</script>
+
+
+
