@@ -144,6 +144,57 @@ body {
   color: #4b6cff;
 }
 
+/* ====== Главный бургер ====== */
+.main-burger {
+    width: 30px;
+    height: 22px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 99999;
+}
+
+.main-burger span {
+    display: block;
+    height: 3px;
+    background: #333;
+    border-radius: 3px;
+}
+
+/* ====== Новое мобильное меню ====== */
+.main-mobile-menu {
+    display: none;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding: 15px 0;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    z-index: 99998;
+}
+
+.main-mobile-menu a {
+    display: block;
+    padding: 14px 20px;
+    font-size: 17px;
+    color: #111;
+    border-bottom: 1px solid #eee;
+}
+
+/* ====== Показываем бургер и скрываем старое меню ====== */
+@media (max-width: 768px) {
+    .main-burger {
+        display: flex;
+    }
+
+    nav.menu {
+        display: none !important; /* прячем только старый nav, категорные бургеры НЕ трогаем */
+    }
+}
+
+
 .menu {
   display: flex;
   align-items: center;
@@ -1467,6 +1518,7 @@ nav.menu > * { max-width: 140px; overflow: hidden; text-overflow: ellipsis; whit
         margin-right: 18px;
     }
 }
+
 
 
 
