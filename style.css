@@ -1519,6 +1519,60 @@ nav.menu > * { max-width: 140px; overflow: hidden; text-overflow: ellipsis; whit
     }
 }
 
+  /* Бургер */
+.mobile-burger {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    width: 32px;
+    height: 24px;
+    z-index: 999999;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.mobile-burger span {
+    display: block;
+    height: 4px;
+    background: #333;
+    border-radius: 4px;
+}
+
+/* Панель */
+.mobile-panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    padding: 70px 20px 20px;
+    display: none;
+    flex-direction: column;
+    z-index: 999998;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.mobile-panel a {
+    padding: 16px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 20px;
+    color: #111;
+}
+
+/* Включаем только на телефонах */
+@media (max-width: 768px) {
+    nav.menu {
+        display: none !important; /* скрываем старое меню */
+    }
+    .mobile-burger {
+        display: flex;
+    }
+}
+
+
+
 
 
 
